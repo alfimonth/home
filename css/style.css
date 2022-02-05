@@ -41,12 +41,13 @@
 
 .m {
     color: white;
-    top: -10px;
-    left: 50px;
+    top: 150px;
+    left: 83px;
     position: absolute;
-    font-family: monospace;
-    font-size: 1000px;
-    animation: up 2s ease;
+    font-family: 'montserratregular';
+    font-size: 500px;
+    font-weight: bold;
+    /* animation: up 2s ease; */
 }
 
 /* place */
@@ -131,4 +132,11 @@ nav a:hover {
     to{
         margin-left: -28px;
     }
+}@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+        url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
