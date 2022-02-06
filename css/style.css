@@ -16,33 +16,35 @@
 
 .moon {
     position: absolute;
-    right: 200px;
-    top: 120px;
+    right: 40%;/*200px*/
+    top: 24%;/*120px*/
     animation: down 2s ease;
+    width: 60%;/*300px*/
+    height: 60%;
 }
 
 .moon .outer {
     border-radius: 50%;
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     background-color: #fff;
 }
 
 .moon .inner {
     position: absolute;
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
+    width: 83.3%;
+    height: 83.3%;
     background-color: white;
     top: 0;
-    left: 70px;
+    left: 23.3%;
     background-color: black;
 }
 
 .m {
     color: white;
-    top: 150px;
-    left: 75px;
+    top: 30%;/*150px*/
+    left: 15%;/*75px*/
     position: absolute;
     font-family: 'montserratregular';
     font-size: 500px;
@@ -60,7 +62,7 @@
 
 /* title */
 .place .title {
-    font-family: 'montserratregular', Arial, Helvetica, sans-serif;
+    font-family: 'montserratregular';
     font-size: 100px;
 }
 
@@ -108,21 +110,21 @@ nav a:hover {
 
 @keyframes up {
     from {
-        top: 300px;
+        top: 60%;
     }
 
     to {
-        top: 150px;
+        top: 30%;
     }
 }
 
 @keyframes down {
     from {
-        top: 0px;
+        top: 0;
     }
 
     to {
-        top: 120px;
+        top: 24%;
     }
 }
 
