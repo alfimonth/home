@@ -42,12 +42,12 @@
 .m {
     color: white;
     top: 150px;
-    left: 83px;
+    left: 75px;
     position: absolute;
     font-family: 'montserratregular';
     font-size: 500px;
     font-weight: bold;
-    /* animation: up 2s ease; */
+    animation: up 2s ease;
 }
 
 /* place */
@@ -55,13 +55,12 @@
     text-align: center;
     z-index: 1;
     height: fit-content;
-    margin-left: -28px;
-    animation: right 2s ease;
+    animation: right 2s ease-in forwards;
 }
 
 /* title */
 .place .title {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'montserratregular', Arial, Helvetica, sans-serif;
     font-size: 100px;
 }
 
@@ -75,13 +74,14 @@ nav {
     display: flex;
 }
 
-nav ul li{
+nav ul li {
     margin: 5px;
 }
 
 nav a {
     font-family: monospace;
     text-decoration: none;
+    font-size: 20px;
     color: black;
     flex-grow: 1;
     text-align: center;
@@ -96,43 +96,48 @@ nav a:hover {
 }
 
 /* foot */
-.foot{
-    position: absolute;
+.foot {
     width: 100%;
-    bottom: 0;
-    height: 50px;
+    height: 40px;
     background-color: #000;
     text-align: center;
     font-size: 20px;
     color: white;
-    line-height: 50px;
+    line-height: 40px;
 }
 
-@keyframes up{
-    from{
-        top: 100px;
+@keyframes up {
+    from {
+        top: 300px;
     }
-    to{
-        top: -10px;
+
+    to {
+        top: 150px;
     }
 }
-@keyframes down{
-    from{
+
+@keyframes down {
+    from {
         top: 0px;
     }
-    to{
+
+    to {
         top: 120px;
     }
 }
-@keyframes right{
-    from{
+
+@keyframes right {
+    from {
         opacity: 0;
         margin-left: 100px;
     }
-    to{
-        margin-left: -28px;
+
+    to {
+        margin-left: -30px;
     }
-}@font-face {
+}
+
+@font-face {
     font-family: 'montserratregular';
     src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
         url('../fonts/montserrat-regular-webfont.woff') format('woff');

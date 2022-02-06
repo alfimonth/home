@@ -1,0 +1,11 @@
+/* large devices up 992 */
+@media only screen and (max-width:1200px) {}
+
+/* medium devices */
+@media only screen and (max-width:992px) {}
+
+/* small devices */
+@media only screen and (max-width:768px) {}
+
+/* Extra small devices */
+@media only screen and (max-width:600px) {}
