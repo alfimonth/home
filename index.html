@@ -1,38 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/responsive.css">
-    </head>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home</title>
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
 
-    <body>
-        <div class="container">
-            <div class="logo">
-                <div class="moon">
-                    <div class="outer"></div>
-                    <div class="inner"></div>
-                </div>
-                <div class="m">M</div>
-            </div>
-            <div class="place">
-                <div class="title">ALFiMONTH</div>
-                <nav>
-                    <ul>
-                        <a href="../blog"><li>Blog</li></a>
-                        <a href="../project"><li>Project</li></a>
-                        <a href="../galeri"><li>Galeri</li></a>
-                        <a href="../about"><li>About</li></a>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-        <div class="foot">copyright 2022. alfimonth.</div>
-    </body>
+	<body>
+		<header>
+			<div class="container">
+				<div class="logo">
+					<div class="moon">
+						<div class="outer"></div>
+						<div class="inner"></div>
+					</div>
+					<div class="m">M</div>
+				</div>
+				<div class="place">
+					<div class="title">ALFiMONTH</div>
+					<nav>
+						<ul>
+							<a href="https://github.com/alfimonth?tab=repositories">
+								<li>Repo</li>
+							</a>
+							<a href="http://metamo.rf.gd">
+								<li>Shortlink</li>
+							</a>
+							<a href="http://metamo.rf.gd/games/sliderpuzz/">
+								<li>Games</li>
+							</a>
+							<a href="../about">
+								<li>About</li>
+							</a>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<footer>&copy; 2023 ALFiMONTH</footer>
+		<main>
+
+		</main>
+		<!-- <footer></footer> -->
+		<script>
+			let fitFontSize = () => {
+				document.querySelector(".logo .m").style.fontSize = getComputedStyle(document.querySelector(".logo")).width;
+			};
+			fitFontSize();
+			window.addEventListener("resize", fitFontSize);
+		</script>
+	</body>
 
 </html>
